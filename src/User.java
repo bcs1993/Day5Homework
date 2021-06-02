@@ -1,4 +1,9 @@
 public class User {
+    public static void main(String[] args) {
+        User brian = new User("Brian", "Smith", "brianc123", "123456");
+        User amber = new User("Amber", "Smith", "ambern123", "654321");
+
+    }
     private String firstName;
     private String lastName;
     private String userName;
@@ -10,12 +15,9 @@ public class User {
         this.userName = userName;
         this.passWord = passWord;
 
-        this.firstName = "unknown";
-        this.lastName = "unknown";
-        this.userName = "unknown";
-        this.passWord = "unknown";
 
     }
+
 
     public String getFirstName() {
         return firstName;
@@ -47,6 +49,13 @@ public class User {
 
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+    public User() {
+        this.firstName = "unknown";
+        this.lastName = "unknown";
+        this.userName = "unknown";
+        this.passWord = "unknown";
+
     }
 
 
